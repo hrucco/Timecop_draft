@@ -1,5 +1,0 @@
-@EndUserText.label: 'Services definition for leaves'
-define service zhrd_SR_LEAVE {
-  expose zhrd_C_LEAVE;
-  expose zhrd_C_LEAVE_CONT;
-}
