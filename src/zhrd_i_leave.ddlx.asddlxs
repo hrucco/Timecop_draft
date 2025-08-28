@@ -1,0 +1,28 @@
+@Metadata.layer: #CORE
+annotate entity ZHRD_I_LEAVE
+    with 
+{
+//LeaveGuid;
+@Consumption.valueHelpDefinition: [{ entity: { name: 'ZHRD_B_EMPLOYEE' , element: 'EmployeeId' }}]
+RequestorId;
+//RequestorName;
+//LeaveTypeId;
+@Consumption.valueHelpDefinition: [{ entity: { name: 'ZHRD_I_STATUS_DOMAIN' , element: 'ValueLow' }}]
+Status;
+//DateFrom;
+//DateTo;
+@Consumption.valueHelpDefinition: [{ entity: { name: 'ZHRD_B_EMPLOYEE' , element: 'EmployeeId' }}]
+BackupId;
+
+@EndUserText.label: 'Requestor Comment'
+RequestorComment;
+//ApproverId;
+//ApproverName;
+@EndUserText.label: 'Approver Comment'
+ApproverComment;
+//CreatedBy;
+//CreatedAt;
+//LastChangedBy;
+//LastChangedAt;
+
+}
