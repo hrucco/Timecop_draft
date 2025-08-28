@@ -1,0 +1,24 @@
+projection;
+strict ( 2 );
+
+define behavior for zhrd_C_LEAVE //alias <alias_name>
+use etag
+{
+  use create;
+  use update;
+  use delete;
+
+  use action suggestBackup;
+  use action copyLeave;
+
+  use association _Contacts { create; }
+}
+
+define behavior for zhrd_C_LEAVE_CONT //alias <alias_name>
+use etag
+{
+  use update;
+  use delete;
+
+  use association _Leave;
+}
