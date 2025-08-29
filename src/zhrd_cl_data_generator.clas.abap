@@ -1,4 +1,4 @@
-CLASS zhtr_cl_data_generator DEFINITION
+CLASS zhrd_cl_data_generator DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zhtr_cl_data_generator IMPLEMENTATION.
+CLASS zhrd_cl_data_generator IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
